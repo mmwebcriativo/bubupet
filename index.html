@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <title>BubuPet</title>  
+    <!-- META TAGS-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Hospedagem para animais" />
+    <meta name="keywords" content="Petshop, Hotel para cachorro, hotel para animais"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="assets/img/fav-icon-bubupet.png" type="image/x-icon" />
+    <!-- GOOGLE FONTES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Nunito:700,800&display=swap" rel="stylesheet">   
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://kit.fontawesome.com/257a1346b5.js" crossorigin="anonymous"></script>  
+    <!-- CSS -->
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
+    <!-- END SEARCH -->
+</head> 
+
+<body onload="startSlider()">
+    <section class="topo" id="bg"> <!--TOP-->
+       <div id="menu-open"  >
+             <span onclick="reveal('menu-open')">X</span>
+             <nav>
+                 <ul>
+                     <li><a class="active-menu" href="">Home</a></li>
+                     <li><a href="#">Empresa</a></li>
+                     <li><a href="#">Serviços</a></li>
+                     <li><a href="#">Reservas</a></li>
+                     <li><a href="#">Whatsapp</a></li>
+                 </ul>
+             </nav>  
+        </div><!--END MENU OPEN-->
+                  
+        <header><!--HEADER-->
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="area-menu col-12">
+                        <nav class="menu col-3">      
+                            <span onclick="reveal('menu-open')">Menu</span>
+                            <i class="fas fa-bars" onclick="reveal('menu-open')"></i>
+                        </nav><!-- END MENU -->
+
+                        <div class="logo justify-center col-6">
+                            <a href=""><img src="assets/img/svg/logo.svg" alt=""></a>
+                        </div><!-- END LOGO-->
+                        
+                        <div class="search col-3">
+                            <input type="text" class="input">
+                            <i class="fas fa-search" id="search1"></i>
+                            <i class="fas fa-search" onclick="revelar('search-mobile')" id="search2" ></i>
+                        </div><!-- END SEARCH -->
+                        
+                        <div class="search-mobile" id="search-mobile">
+                            <img src="assets/img/svg/icon-search2.svg"alt="">
+                            <input type="text" class="input-mobile" autofocus>
+                            <span onclick="revelar('search-mobile')">x</span>
+                        </div>
+                    </div><!--END AREA MENU-->
+                    
+                </div><!--END ROW-->
+            </div><!--END CONTAINER FLUID-->
+        </header><!--END HEADER-->
+        
+        <section id="texto-desk"><!--TEXTO DESK-->
+            <div class="container">
+                <div class="row">
+                    <div class="text-banner col-7">
+                        <h1>Aproveite <br> suas <span class="color-span">férias</span></h1>
+                        <p class="col-8">Hospede o seu animalzinho em um ambiente familiar, com cuidados individuais, muito amor e atualizações diárias.</p>
+                    </div> <!-- END TEXT BANNER -->
+                </div><!-- END ROW -->
+            </div><!--END TEXTO DESK-->
+            
+            <div class="container-arrow-desktop"><!--ARROW-->
+                <div class="container-fluid"><!--CONTAINER-FLUID-->
+                    <div class="row justify-center"><!--END CONTAINER-FLUID-->
+                       <div id="arrow-area"><!--ARROW-AREA-->   
+                           
+                            <i onclick="backPhoto()" class="fas fa-caret-left arrow arrow2"></i>
+                            <i onclick="prox()" class="fas fa-caret-right arrow arrow-active arrow1"></i>
+                                             
+                                               
+                        </div> <!--END ARROW-AREA -->   
+                    </div><!--END ROW-->
+                </div><!--END CONTAINER-FLUID-->
+            </div><!--END ARROW-->
+                
+             <section class="btn-header-mobile col-6 ">
+                <div class="container-fluid">
+                    <div class="row justify-center">    
+                        <div class="btn ">
+                            <a href="#">faça sua reserva agora!</a>        
+                        </div><!-- END BTN -->
+                    </div><!-- END ROW -->
+                </div><!-- END CONTAINER FLUID -->    
+            </section><!--END BTN HEADER MOBILE--> 
+        </section><!--END HEADER-->     
+    </section> <!--END TOPO-->          
+
+   
+    
+    <section id="texto-mobile">
+            <div class="container-arrow-mobile">
+                <div class="container-fluid">
+                    <div class="row justify-center">
+                       <div id="arrow-area">
+                            <i onclick="voltarFoto()" class="fas fa-caret-left arrow arrow2"></i>
+                            <i onclick="prox()" class="fas fa-caret-right arrow arrow-active arrow1"></i>
+                        </div><!-- END ARROW AREA-->
+                    </div><!-- END ROW -->
+                </div><!-- END CONTAINER FLUID -->
+            </div><!-- END CONTAINER ARROW MOBILE-->
+            <div class="container">
+                <div class="row">
+                   
+                    <div class="text-banner col-12">
+                        <h1>Aproveite suas <span class="color-span">férias</span></h1>
+                        <p>Hospede o seu animalzinho em um ambiente familiar,<br>
+                         com cuidados individuais, muito amor <br> e atualizações diárias.</p>
+                    </div><!-- END TEXT BANNER-->
+                </div> <!-- END ROW -->
+            </div><!-- END CONTAINER -->
+            
+            <section class="btn-header-mobile">
+                <div class="container-fluid">
+                    <div class="row justify-center">    
+                        <div class="btn ">
+                            <a href="#">faça sua reserva agora!</a>        
+                        </div>
+                    </div>
+                </div>    
+            </section><!--END BTN HEADER MOBILE-->  
+              
+        </section><!--END TEXO MOBILE-->      
+
+
+    <section class="area-b">
+        <div class="container">
+            <div class="row">
+                <div class="content-area-b col-12">
+                   
+                    <div class="icon col-4">
+                        <img src="assets/img/svg/icon-ball.svg" alt="">
+                    </div><!--END ICON-->
+                    
+                    <div class="text-area-b col-8 border-radius-left">
+                        <h3>Aqui tem muita <span class="color-span">diversão! </span></h3>
+                        <p>Jogar a bolinha, cabo de guerra,<br> brinquedos com petiscos, esconda <br> brinquedos.
+                    </div><!--END TEXT AREA B -->
+                    
+                </div><!--END CONTENT AREA B -->
+            </div><!--END ROW -->  
+            
+
+             <div class="row">
+                <div class="content-area-b col-12">
+                   
+                    <div class="text-area-b col-8 border-radius-right">
+                        <h3>Aqui tem muita <span class="color-span">comida!</span></h3>
+                        <p>Ração e água fresca para o seu <br> pet, é por conta da casa.</p>
+                    </div><!--END TEXT AREA B -->
+                    
+                     <div class="icon col-4">
+                        <img src="assets/img/svg/icon-dog-food.svg" alt="">
+                    </div><!--END ICON-->
+                    
+                </div><!--END CONTENT AREA B -->
+            </div><!--END ROW -->
+            
+            <div class="row">
+                <div class="content-area-b col-12">
+                   
+                    <div class="icon col-4">
+                        <img src="assets/img/svg/take-a-bath.svg"  alt="">
+                    </div><!--END ICON--> 
+                    
+                    <div class="text-area-b col-8 border-radius-left">
+                        <h3><span class="color-span">SPA</span></h3>
+                        <p><b>Banho comum?</b> Aqui o seu Pet <br>tem tratamento vip até na hora <br> do banho.</p>
+                    </div><!--END CONTENT AREA B -->
+                    
+                </div><!--END CONTENT AREA B -->
+            </div><!--END ROW -->
+            
+             <div class="row">
+                <div class="content-area-b col-12">
+                   
+                    <div class="text-area-b col-8 border-radius-right">
+                        <h3>Descanso <span class="color-span"u>merecido!</span></h3>
+                        <p>Temos um espaço super confortável, <br>para o seu Pet renovar as <br> energias.</p>
+                    </div><!--END TEXT AREA B -->
+                    
+                     <div class="icon col-4">
+                        <img src="assets/img/svg/bed-dog.svg" alt="">
+                    </div><!--END ICON--> 
+                    
+                </div><!--END CONTENT AREA B -->
+            </div><!-- END ROW -->       
+        </div><!-- END CONTAINER -->
+        
+    </section><!--END AREA B -->
+
+    <section class="area-c">
+
+        <div class="container">
+            <div class="row">
+                <div class="call-to-action col-12">
+                   
+                    <div class="text-area-call-to-action ">
+                        <h2>OFFNATAL</h2>
+                        <h3>Faça o seu cadastro e ganhe um cupom com</h3>
+                        <h3><span>R$100,00</span> desconto agora!</h3> 
+                    </div><!--END TEXT AREA CALL TO ACTION -->
+                    
+                <div class="container-fluid">
+                    <div class="row justify-center">
+                           
+                        <div class="call-to-action-area">
+                           <input type="text" placeholder="Email:">
+                            <a href="#" class="btn-call">quero o meu desconto agora!</a>   
+                        </div><!--END CALL TO ACTION -->
+                        
+                    </div>
+                </div> <!-- END CONTAINER FLUID -->   
+          
+                </div><!-- END CALL TO ACTION -->
+            </div>
+        </div><!-- END CONTAINER -->
+    </section><!-- END AREA C-->
+
+
+<section class="container-fluid color-bg">
+    <div class="row">
+        <div class="table-area ">
+           <h3>Nossos <span class="color-span">serviços</span></h3>
+            <table class="rTable">
+               <caption>Conheça alguns de nossos planos de hospedagem</caption>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Á vista</th>
+                        <th>Parcelado</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1 dia</td>
+                        <td >R$50,00</td>
+                        <td>1x</td>
+                        <td>Hospedagem/Alimentação</td>
+                    </tr>
+
+                     <tr>
+                        <td>10 dias</td>
+                        <td>R$350,00</td>
+                        <td>3x</td>
+                        <td>Hospedagem/ Alimentação</td>
+                    </tr>
+
+                     <tr>
+                        <td>20 dias</td>
+                        <td>R$550,00</td>
+                        <td>6x</td>
+                        <td>Hospedagem/ Alimentação</td>
+                    </tr>
+
+                     <tr>
+                        <td>30 dias</td>
+                        <td>R$700,00</td>
+                        <td>6x</td>
+                        <td>Hospedagem/Alimentação</td>
+                    </tr>
+
+                </tbody>
+            </table> <!--END TABLE -->
+            
+             <div class="container-fluid">
+                   
+                    <div class="row justify-center">  
+                        <div class="call-to-action-area">
+                            <a href="#" class="btn-call color-btn1">Faça sua reserva agora!</a>   
+                        </div><!--END CALL TO ACTION AREA -->
+                    </div><!--END ROW -->
+                    
+            </div><!--END CONTAINER FLUID-->        
+        </div><!--END TABLE AREA -->       
+    </div>
+
+</section>
+<section class="areaD">
+    <div class="container">
+        <div class="row">
+            <div class="cont-area-d col-12">
+               
+                <div class="img-area-d">
+                    <img src="assets/img/ft1.png" alt="">
+                </div><!--END IMG AREA D-->
+                
+                <div class="text-area-d col-8">
+                    <h2>Diversão <span class="color-span">garantida</span></h2>
+                    <p> Aqui o seu pet vai poder desfrutar de serviços como banho de piscina, espaço recreativo e dormitórios. Contamos com 20 funcionários para poder oferecer uma experiência super diferenciada ao seu animalzinho.</p>
+                </div><!--END TEXT AREA D-->
+        
+            </div><!--END CONTENT AREA D -->
+        </div> <!--END ROW -->
+    </div> <!--END CONTAINER-->
+</section><!--END AREA D-->
+
+<footer>
+    <div class="container">
+        <div class="row">
+           
+            <section class="footer col-12">
+                <nav>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                    <a href="#">Termos e Condições</a>
+                </nav>
+                
+                <div class="social-media">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a> 
+                    <a href=""><i class="fab fa-instagram"></i></a>       
+                </div>
+            </section> <!--END  SECTION FOOTER -->
+            
+        </div><!--END ROW -->
+    </div><!--END CONTAINER -->
+</footer><!--END FOOTER-->
+ 
+  <!--SCRIPTS-->
+ <script type="text/javascript" src="assets/js.js"></script>
+
+</body>
+</html>

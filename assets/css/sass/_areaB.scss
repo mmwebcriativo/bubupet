@@ -1,0 +1,147 @@
+@import 'default';
+
+.area-b{
+    background-color: $color5;
+    background-image: url('../img/textura.jpg');
+ 
+    padding: 40px 20px 20px 20px;
+}
+
+.content-area-b{
+    display: flex;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    
+    img{
+        width: 200px;
+    }
+}
+
+.text-area-b{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+    p{
+        text-align: center;
+    }
+    
+}
+
+.border-radius-left{
+    border-radius: 100px 30px 100px 30px;
+}
+
+.border-radius-right{
+    border-radius: 30px 100px 30px 100px;
+}
+
+.content-area-b{
+   
+}
+.content-area-b:first-child{
+}
+
+
+
+@media screen and (max-width:800px){
+        
+    .area-b{
+        padding: 20px;
+    }
+    
+    .text-area-b{
+        h3{
+            font-size: 1.6em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+    }  
+    
+    .icon img{
+        width: 120px;
+}
+    
+@media screen and (max-width:550px){
+        
+    .area-b{
+        padding: 20px;
+    }
+    
+    .text-area-b{
+        h3{
+            font-size: 1.3em;
+        }
+        p{
+            font-size: 1em;
+        }
+    }  
+    
+    .icon img{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .text-area-b h2{
+        font-size: 0.9em;
+    }
+    
+   .text-area-b  h3{
+        font-size: 0.9em;
+       white-space: nowrap;
+    }
+    .text-area-b p {
+        font-size: 0.7em;
+    }
+    
+    .icon img {
+    width: 80px;
+    }
+
+}
+
+@media screen and (max-width:365px){
+    .text-area-b h2{
+        font-size: 0.9em;
+    }
+    
+    .text-area-b p {
+    font-size: 0.755em;
+    }
+    
+    .icon img {
+    width: 80px;
+    }
+
+}
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

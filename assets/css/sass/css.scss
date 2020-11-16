@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'header';
+@import 'areaB';
+@import 'areaC';
+@import 'default';
+@import 'areatabela';
+@import 'footer';
+@import 'areaD';
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: $color1;
+}
+h1,h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700px;
+    color: $color1;
+    
+}
+h2{
+    font-size: 2.8em;
+}
+h3{
+    font-size: 2em;
+    font-family: 'Nunito Sans',sans-serif;
+    color: $color1;
+}
+p{
+    font-size: 1.2em;
+}
+
+

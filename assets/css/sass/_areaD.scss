@@ -1,0 +1,81 @@
+.areaD{
+    width: 100%;
+    padding: 90px 0;
+     background-image: url('../img/textura.jpg');
+}
+.cont-area-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-area-d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-area-d img{
+    width: 500px;
+}
+
+.text-area-d{
+   
+    padding-top: 20px; 
+    
+    h2{
+        text-align: center;
+        line-height: 1em;
+    }
+    p{
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width:800px){
+    .areaD{
+        padding: 60px 0;
+    }
+    .text-area-d h2{
+        font-size: 2.5em;   
+    }
+    .text-area-d p{
+        font-size: 1.1em;
+    }
+     
+}
+
+
+
+@media only screen and (max-width:550px){
+ 
+       .img-area-d img{
+        width: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width:450px){
+    .table-area .btn-call{
+        padding: 15px 50px;
+        font-size: 0.8em;
+    }
+       .img-area-d img{
+        width: 280px;
+    }
+    
+      .text-area-d h2{
+        font-size: 1.8em;
+    }
+    
+      .text-area-d p{
+        font-size: 0.7em; 
+          text-align: center;
+    }
+}
+
+
+

@@ -1,0 +1,121 @@
+.table-area{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .table-area h3{
+    font-size: 2.5em;
+ }
+.rTable thead th,
+.rTable tbody td{
+     padding: 20px 0;
+}
+.rTable thead th{
+    font-size: 1.2em;
+}
+
+.rTable{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 20px 0;
+   
+    caption{
+       padding: 0 10px;
+        font-size: 1.5em;
+    }
+    
+    thead{
+         background-color: $color3;
+    }
+    
+    tbody{
+
+        td{
+          
+        }
+        td:nth-child(1){
+            width: 20%;
+            background-color: $color9;
+        }
+        td:nth-child(2){
+            width: 15%;
+            background-color: transparent;
+        }
+        td:nth-child(3){
+            width: 15%;
+          
+        }
+        td:nth-child(4){
+            width: 40%;
+            
+        }
+    }
+}
+    
+
+
+@media only screen and (max-width:550px){
+    .table-area{
+        width: 90%;
+    }
+   
+    .rTable thead th,
+    .rTable tbody td{
+        padding: 20px 10px;
+    }
+    .rTable thead th{
+        font-size: 0.9em;
+    }
+    .rTable tbody td{
+        font-size: 0.7em;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+    
+    .table-area{
+        padding: 40px 0;
+    }
+    .rTable thead th,
+    .rTable tbody td{
+        padding: 20px 0px;
+    }
+    .rTable thead th{
+        font-size: 0.9em;
+    }
+    .rTable tbody td{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .table-area h3{
+        font-size: 1.8em;
+    }
+    
+    .rTable thead th,
+    .rTable tbody td{
+        padding: 10px 0px;
+    }
+    .rTable caption{
+        font-size: 0.8em;
+    }
+    .rTable thead th{
+        font-size: 0.7em;
+    }
+    .rTable tbody td{
+        font-size: 0.6em;
+    }
+}
+
+
+
+
+
+
+
+

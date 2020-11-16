@@ -1,0 +1,36 @@
+@import 'grid';
+
+$color1: #191919;
+$color2: #fc7575;
+$color3: #8ebf68;
+$color4: #e3b22b;
+$color5: #f4f4f6;
+$color6: #5db6ff;
+$color7: #A0CFF6;
+$color8: #e5aa0a;
+$color9: #c9f0ab;
+
+
+$focus-input: rgba(122,193, 68, 0.3);
+
+%alignment{
+    display: flex;
+    align-items: center;
+}
+.flex-collumn{
+    flex-direction: column;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.color-span{
+    color: $color2;
+}
+.color-bg{
+    background-color: $color5;
+}
+
+.color-btn1{
+    background-color: $color2;
+}
